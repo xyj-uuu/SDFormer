@@ -68,7 +68,7 @@ model = dict(
         out_indices=(2, 3, 4, 5, 6),
         with_cp=True,
         init_cfg=dict(type='Pretrained', prefix='backbone', 
-        checkpoint='/data/B221000559-XYJ/project/stereoscene/pretrain/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'),
+        checkpoint='./data/pretrain/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'),
     ),
     img_neck=dict(
         type='SECONDFPN',
@@ -130,8 +130,8 @@ model = dict(
 )
 
 dataset_type = 'CustomSemanticKITTILssDataset'
-data_root = '/data/B221000559-XYJ/data/SemanticKITTI/'
-ann_file = '/data/B221000559-XYJ/project/stereoscene/predata/lss-semantic_kitti_voxel_label/labels/'
+data_root = './data/SemanticKITTI/'
+ann_file = './data/predata/lss-semantic_kitti_voxel_label/labels/'
 file_client_args = dict(backend='disk')
 
 bda_aug_conf = dict(

@@ -65,7 +65,7 @@ model = dict(
         out_indices=(2, 3, 4, 5, 6),
         with_cp=True,
         init_cfg=dict(type='Pretrained', prefix='backbone', 
-        checkpoint='/data/B221000559-XYJ/project/stereoscene/pretrain/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'),
+        checkpoint='./pretrain/efficientnet-b7_3rdparty_8xb32-aa_in1k_20220119-bf03951c.pth'),
     ),
     img_neck=dict(
         type='SECONDFPN',
@@ -128,8 +128,8 @@ model = dict(
 )
 
 dataset_type = 'Kitti360Dataset'
-data_root = '/data/B221000559-XYJ/project/WM-Project/kitti360/'
-ann_file = '/data/B221000559-XYJ/project/WM-Project/kitti360/preprocess/'
+data_root = './data/kitti360/'
+ann_file = './data/kitti360/preprocess/'
 file_client_args = dict(backend='disk')
 
 bda_aug_conf = dict(
