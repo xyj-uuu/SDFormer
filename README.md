@@ -20,8 +20,6 @@ Additionally, we design a Semantic Calibration Affinity to enhance semantic-awar
 ## 🛠️ Step-by-Step Installation
 Following the [mmdetection3d installation guide](sslocal://flow/file_open?url=https%3A%2F%2Fmmdetection3d.readthedocs.io%2Fen%2Flatest%2Fgetting_started.html%23installation&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=).
 
-
-
 ```bash
 # 1. Create conda environment with Python 3.7 (Python >3.7 may cause open3d-python issues)
 conda create -n occupancy python=3.7 -y
@@ -51,3 +49,17 @@ python setup.py install
 pip install timm
 pip install open3d-python
 pip install PyMCubes
+```
+
+
+## 📂 Data Preparation
+
+a. You need to download:
+
+- The Odometry calibration ([Download odometry data set (calibration files)](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)) and the RGB images ([Download odometry data set (color)](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)) from [KITTI Odometry website](https://www.cvlibs.net/datasets/kitti/eval_odometry.php), extract them to the folder `data/occupancy/semanticKITTI/RGB/`.
+- The Velodyne point clouds ([Download data_odometry_velodyne](https://www.cvlibs.net/download.php?file=data_odometry_velodyne.zip)) and the SemanticKITTI label data ([Download data_odometry_labels](http://www.semantic-kitti.org/assets/data_odometry_labels.zip)) for sparse LIDAR supervision in training process, extract them to the folders `data/lidar/velodyne/` and `data/lidar/lidarseg/`, separately.
+
+b. Prepare KITTI voxel label (see sh file for more details):
+
+```bash
+bash process_kitti.sh
