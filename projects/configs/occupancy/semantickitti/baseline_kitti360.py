@@ -128,8 +128,8 @@ model = dict(
 )
 
 dataset_type = 'Kitti360Dataset'
-data_root = '/project/WM-Project/kitti360/'
-ann_file = '/data/kitti360/preprocess/'
+data_root = '/data/B221000559-XYJ/project/WM-Project/kitti360/'
+ann_file = '/data/B221000559-XYJ/project/WM-Project/kitti360/preprocess/'
 file_client_args = dict(backend='disk')
 
 bda_aug_conf = dict(

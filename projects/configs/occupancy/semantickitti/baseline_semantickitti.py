@@ -130,8 +130,8 @@ model = dict(
 )
 
 dataset_type = 'CustomSemanticKITTILssDataset'
-data_root = './data/SemanticKITTI/'
-ann_file = './predata/lss-semantic_kitti_voxel_label/labels/'
+data_root = '/data/B221000559-XYJ/data/SemanticKITTI/'
+ann_file = '/data/B221000559-XYJ/project/stereoscene/predata/lss-semantic_kitti_voxel_label/labels/'
 file_client_args = dict(backend='disk')
 
 bda_aug_conf = dict(
