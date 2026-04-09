@@ -85,3 +85,29 @@ python tools/test.py \
             projects/configs/sdformer/semantickitti/sdformer_base.py \
             pretrain/sdformer_base_semantickitti.pth \
 ```
+
+## 🙏 Acknowledgements
+
+We sincerely thank the authors of the following excellent open-source projects:
+
+- [MonoScene](https://github.com/astra-vision/MonoScene)
+- [BRGScene](https://github.com/Arlo0o/StereoScene)
+- [SAM](https://github.com/facebookresearch/segment-anything)
+- [HTCL](https://github.com/Arlo0o/HTCL?tab=readme-ov-file)
+- [mmedt3d](https://github.com/open-mmlab/mmdetection3d)
+
+## 📌 Citation
+
+If you find this project useful in your research, please consider cite:
+
+```bash
+@inproceedings{xue2025sdformer,
+  title={SDFormer: Vision-based 3D Semantic Scene Completion via SAM-assisted Dual-channel Voxel Transformer},
+  author={Xue, Yujie and Pi, Huilong and Zhang, Jiapeng and Qin, Yunchuan and Tang, Zhuo and Li, Kenli and Li, Ruihui},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={26837--26847},
+  year={2025}
+}
+```
+
+
