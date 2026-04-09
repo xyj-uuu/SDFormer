@@ -11,6 +11,9 @@ The official code of ICCV 2025 accepted paper "SDFormer: Vision-based 3D Semanti
 ## 📰 News
 - [2025/10]: [Paper](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) is published in [ICCV 2025].[![Paper](https://img.shields.io/badge/ICCV%20Paper-Official%20PDF-red.svg)](https://openaccess.thecvf.com/content/ICCV2025/papers/Xue_SDFormer_Vision-based_3D_Semantic_Scene_Completion_via_SAM-assisted_Dual-channel_Voxel_ICCV_2025_paper.pdf)
 
+## 🏗️ Framework
+![SDFormer Overall Framework Pipeline](assets/overview.png "SDFormer完整框架流程图")
+
 ## 📝 Abstract
 Vision-based semantic scene completion (SSC) is able to predict complex scene information from limited 2D images, which has attracted widespread attention. Currently, SSC methods typically construct unified voxel features containing both geometry and semantics, which lead to different depth positions in occluded regions sharing the same 2D semantic information, resulting in ambiguous semantic segmentation.
 To address this problem, we propose **SDFormer**, a novel SAM-assisted Dual-channel Voxel Transformer framework for SSC. We uncouple the task based on its multi-objective nature and construct two parallel subnetworks: a semantic constructor (SC) and a geometric refiner (GR). The SC utilizes the Segment Anything Model (SAM) to construct dense semantic voxel features from reliable visible semantic information in the image. The GR accurately predicts depth positions and then further adjusts the semantic output by SAM.
