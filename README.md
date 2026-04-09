@@ -22,8 +22,8 @@ Following the [mmdetection3d installation guide](sslocal://flow/file_open?url=ht
 
 ```bash
 # 1. Create conda environment with Python 3.7 (Python >3.7 may cause open3d-python issues)
-conda create -n occupancy python=3.7 -y
-conda activate occupancy
+conda create -n sdformer python=3.7 -y
+conda activate sdformer
 
 # 2. Install PyTorch and torchvision (CUDA 11.3)
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
@@ -51,7 +51,6 @@ pip install open3d-python
 pip install PyMCubes
 ```
 
-
 ## 📂 Data Preparation
 
 a. You need to download:
@@ -63,3 +62,26 @@ b. Prepare KITTI voxel label (see sh file for more details):
 
 ```bash
 bash process_kitti.sh
+```
+
+
+## 🚀 Training & Evaluation
+
+**Single GPU Operations**
+
+**Training**
+
+```bash
+export PYTHONPATH="."
+python tools/train.py \
+            projects/configs/sdformer/semantickitti/sdformer_base.py
+```
+
+**Evaluation**
+
+```bash
+export PYTHONPATH="."
+python tools/test.py \
+            projects/configs/sdformer/semantickitti/sdformer_base.py \
+            pretrain/sdformer_base_semantickitti.pth \
+```
