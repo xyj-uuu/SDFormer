@@ -74,7 +74,7 @@ bash process_kitti.sh
 ```bash
 export PYTHONPATH="."
 python tools/train.py \
-            projects/configs/sdformer/semantickitti/sdformer_base.py
+            projects/configs/sdformer/semantickitti/baseline_semantickitti.py
 ```
 
 **Evaluation**
@@ -82,7 +82,7 @@ python tools/train.py \
 ```bash
 export PYTHONPATH="."
 python tools/test.py \
-            projects/configs/sdformer/semantickitti/sdformer_base.py \
+            projects/configs/sdformer/semantickitti/baseline_semantickitti.py \
             pretrain/sdformer_base_semantickitti.pth \
 ```
 
