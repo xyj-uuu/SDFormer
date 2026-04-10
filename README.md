@@ -20,6 +20,8 @@ Vision-based semantic scene completion (SSC) is able to predict complex scene in
 To address this problem, we propose **SDFormer**, a novel SAM-assisted Dual-channel Voxel Transformer framework for SSC. We uncouple the task based on its multi-objective nature and construct two parallel subnetworks: a semantic constructor (SC) and a geometric refiner (GR). The SC utilizes the Segment Anything Model (SAM) to construct dense semantic voxel features from reliable visible semantic information in the image. The GR accurately predicts depth positions and then further adjusts the semantic output by SAM.
 Additionally, we design a Semantic Calibration Affinity to enhance semantic-aware transformations in SC. Within the GR, Shape Segments Interactive and Learnable mask generation module to emphasize the spatial location of semantics to obtain fine-grained voxel information. Extensive qualitative and quantitative results on the SemanticKITTI and SSCBench-KITTI360 datasets show that our method outperforms state-of-the-art approaches.
 
+📊 Dataset Comparison
+![SDFormer Dataset Comparison](assets/dataset.png "SDFormer")
 ---
 ## 🛠️ Step-by-Step Installation
 Following the [mmdetection3d installation guide](sslocal://flow/file_open?url=https%3A%2F%2Fmmdetection3d.readthedocs.io%2Fen%2Flatest%2Fgetting_started.html%23installation&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=).
