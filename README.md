@@ -9,7 +9,7 @@ The official code of ICCV 2025 accepted paper "SDFormer: Vision-based 3D Semanti
 
 
 ## 📰 News
-- [2026/2]: 🎉 New Mehtod is accepted by CVPR 2026: Learning Spatial-Temporal Consistency for 3D Semantic Scene Completion.
+- [2026/2]: 🎉 New Mehtod is accepted by CVPR 2026: Learning Spatial-Temporal Consistency for 3D Semantic Scene Completion.[[GitHub]](https://github.com/xyj-uuu/ConSSC-CVPR2026)
 - [2025/10]: [Paper](https://openaccess.thecvf.com/content/ICCV2025/papers/Xue_SDFormer_Vision-based_3D_Semantic_Scene_Completion_via_SAM-assisted_Dual-channel_Voxel_ICCV_2025_paper.pdf) is published in **ICCV 2025**.[![Paper](https://img.shields.io/badge/ICCV%20Paper-Official%20PDF-red.svg)](https://openaccess.thecvf.com/content/ICCV2025/papers/Xue_SDFormer_Vision-based_3D_Semantic_Scene_Completion_via_SAM-assisted_Dual-channel_Voxel_ICCV_2025_paper.pdf)
 
 ## 🏗️ Framework
